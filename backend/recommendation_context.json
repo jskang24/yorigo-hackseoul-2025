@@ -1,0 +1,562 @@
+{
+  "6a78feac-99ad-4644-b229-692c1754a32a": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "7uX9nODjeUsasAgbmkHu",
+    "recipe_name": "원팬 알리오 올리오",
+    "state_hash": "52625ee34495d661eee33f283fe976c9",
+    "action": "7uX9nODjeUsasAgbmkHu",
+    "next_state": null,
+    "next_available_actions": [
+      "7uX9nODjeUsasAgbmkHu"
+    ],
+    "factors": {
+      "efficiency": 0.0,
+      "taste_match": 0.6666666666666665,
+      "price_saving": 0.0,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 0.0,
+      "total_savings_krw": 0.0,
+      "shared_ingredients": []
+    },
+    "taste_match_score": 66.66666666666666,
+    "timestamp": "2025-11-08T23:05:22.904714"
+  },
+  "14655c6d-6259-4bd4-9165-a14873855bd4": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "7uX9nODjeUsasAgbmkHu",
+    "recipe_name": "원팬 알리오 올리오",
+    "state_hash": "52625ee34495d661eee33f283fe976c9",
+    "action": "7uX9nODjeUsasAgbmkHu",
+    "next_state": null,
+    "next_available_actions": [
+      "7uX9nODjeUsasAgbmkHu"
+    ],
+    "factors": {
+      "efficiency": 0.0,
+      "taste_match": 0.6666666666666665,
+      "price_saving": 0.0,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 0.0,
+      "total_savings_krw": 0.0,
+      "shared_ingredients": []
+    },
+    "taste_match_score": 66.66666666666666,
+    "timestamp": "2025-11-08T23:10:52.963083"
+  },
+  "e20fd857-c261-4bd0-b3ca-293496a9cef7": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "7uX9nODjeUsasAgbmkHu",
+    "recipe_name": "원팬 알리오 올리오",
+    "state_hash": "52625ee34495d661eee33f283fe976c9",
+    "action": "7uX9nODjeUsasAgbmkHu",
+    "next_state": null,
+    "next_available_actions": [
+      "7uX9nODjeUsasAgbmkHu"
+    ],
+    "factors": {
+      "efficiency": 0.0,
+      "taste_match": 0.6666666666666665,
+      "price_saving": 0.0,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 0.0,
+      "total_savings_krw": 0.0,
+      "shared_ingredients": []
+    },
+    "taste_match_score": 66.66666666666666,
+    "timestamp": "2025-11-08T23:11:06.062937"
+  },
+  "f75b262e-319b-4dbc-bd42-8a7371392d0d": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "7uX9nODjeUsasAgbmkHu",
+    "recipe_name": "원팬 알리오 올리오",
+    "state_hash": "52625ee34495d661eee33f283fe976c9",
+    "action": "7uX9nODjeUsasAgbmkHu",
+    "next_state": null,
+    "next_available_actions": [
+      "7uX9nODjeUsasAgbmkHu"
+    ],
+    "factors": {
+      "efficiency": 0.0,
+      "taste_match": 0.6666666666666665,
+      "price_saving": 0.0,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 0.0,
+      "total_savings_krw": 0.0,
+      "shared_ingredients": []
+    },
+    "taste_match_score": 66.66666666666666,
+    "timestamp": "2025-11-08T23:12:18.360070"
+  },
+  "6aa984c9-57e7-43f4-9f99-57c9e335bb4b": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "7uX9nODjeUsasAgbmkHu",
+    "recipe_name": "원팬 알리오 올리오",
+    "state_hash": "52625ee34495d661eee33f283fe976c9",
+    "action": "7uX9nODjeUsasAgbmkHu",
+    "next_state": null,
+    "next_available_actions": [
+      "7uX9nODjeUsasAgbmkHu"
+    ],
+    "factors": {
+      "efficiency": 0.0,
+      "taste_match": 0.6666666666666665,
+      "price_saving": 0.0,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 0.0,
+      "total_savings_krw": 0.0,
+      "shared_ingredients": []
+    },
+    "taste_match_score": 66.66666666666666,
+    "timestamp": "2025-11-08T23:51:06.535805"
+  },
+  "65dad566-f670-4af4-a8b1-f7734f514415": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "7uX9nODjeUsasAgbmkHu",
+    "recipe_name": "원팬 알리오 올리오",
+    "state_hash": "52625ee34495d661eee33f283fe976c9",
+    "action": "7uX9nODjeUsasAgbmkHu",
+    "next_state": null,
+    "next_available_actions": [
+      "7uX9nODjeUsasAgbmkHu"
+    ],
+    "factors": {
+      "efficiency": 0.0,
+      "taste_match": 0.6666666666666665,
+      "price_saving": 0.0,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 0.0,
+      "total_savings_krw": 0.0,
+      "shared_ingredients": []
+    },
+    "taste_match_score": 66.66666666666666,
+    "timestamp": "2025-11-08T23:51:19.013225"
+  },
+  "05cd9109-d0bf-47f3-a426-d13a36ac0717": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "7uX9nODjeUsasAgbmkHu",
+    "recipe_name": "원팬 알리오 올리오",
+    "state_hash": "52625ee34495d661eee33f283fe976c9",
+    "action": "7uX9nODjeUsasAgbmkHu",
+    "next_state": null,
+    "next_available_actions": [
+      "7uX9nODjeUsasAgbmkHu"
+    ],
+    "factors": {
+      "efficiency": 0.0,
+      "taste_match": 0.6666666666666665,
+      "price_saving": 0.0,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 0.0,
+      "total_savings_krw": 0.0,
+      "shared_ingredients": []
+    },
+    "taste_match_score": 66.66666666666666,
+    "timestamp": "2025-11-08T23:53:33.600837"
+  },
+  "c6f9a3f0-8f6e-4c3e-a6e4-324f2e230bca": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "7uX9nODjeUsasAgbmkHu",
+    "recipe_name": "원팬 알리오 올리오",
+    "state_hash": "52625ee34495d661eee33f283fe976c9",
+    "action": "7uX9nODjeUsasAgbmkHu",
+    "next_state": null,
+    "next_available_actions": [
+      "7uX9nODjeUsasAgbmkHu"
+    ],
+    "factors": {
+      "efficiency": 0.0,
+      "taste_match": 0.6666666666666665,
+      "price_saving": 0.0,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 0.0,
+      "total_savings_krw": 0.0,
+      "shared_ingredients": []
+    },
+    "taste_match_score": 66.66666666666666,
+    "timestamp": "2025-11-08T23:53:53.788671"
+  },
+  "691ff197-2a68-46b1-b363-caa16f03054d": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "7uX9nODjeUsasAgbmkHu",
+    "recipe_name": "원팬 알리오 올리오",
+    "state_hash": "52625ee34495d661eee33f283fe976c9",
+    "action": "7uX9nODjeUsasAgbmkHu",
+    "next_state": null,
+    "next_available_actions": [
+      "7uX9nODjeUsasAgbmkHu"
+    ],
+    "factors": {
+      "efficiency": 0.0,
+      "taste_match": 0.6666666666666665,
+      "price_saving": 0.0,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 0.0,
+      "total_savings_krw": 0.0,
+      "shared_ingredients": []
+    },
+    "taste_match_score": 66.66666666666666,
+    "timestamp": "2025-11-09T00:02:11.871338"
+  },
+  "755366e9-7dec-4840-9f18-2a4430296b2d": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "7uX9nODjeUsasAgbmkHu",
+    "recipe_name": "원팬 알리오 올리오",
+    "state_hash": "ebc0aeba8c54ceb12d59833c9b3a97ce",
+    "action": "7uX9nODjeUsasAgbmkHu",
+    "next_state": null,
+    "next_available_actions": [
+      "7uX9nODjeUsasAgbmkHu"
+    ],
+    "factors": {
+      "efficiency": 0.0,
+      "taste_match": 0.6666666666666665,
+      "price_saving": 0.0,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 0.0,
+      "total_savings_krw": 0.0,
+      "shared_ingredients": []
+    },
+    "taste_match_score": 66.66666666666666,
+    "timestamp": "2025-11-09T00:05:00.689187"
+  },
+  "2caf4bcd-ede0-49de-a741-5ea1d8288335": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "7uX9nODjeUsasAgbmkHu",
+    "recipe_name": "원팬 알리오 올리오",
+    "state_hash": "ebc0aeba8c54ceb12d59833c9b3a97ce",
+    "action": "7uX9nODjeUsasAgbmkHu",
+    "next_state": null,
+    "next_available_actions": [
+      "7uX9nODjeUsasAgbmkHu"
+    ],
+    "factors": {
+      "efficiency": 0.0,
+      "taste_match": 0.6666666666666665,
+      "price_saving": 0.0,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 0.0,
+      "total_savings_krw": 0.0,
+      "shared_ingredients": []
+    },
+    "taste_match_score": 66.66666666666666,
+    "timestamp": "2025-11-09T00:06:54.331336"
+  },
+  "0cf46861-c958-4eae-97eb-cf69869e2a18": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "7uX9nODjeUsasAgbmkHu",
+    "recipe_name": "원팬 알리오 올리오",
+    "state_hash": "ebc0aeba8c54ceb12d59833c9b3a97ce",
+    "action": "7uX9nODjeUsasAgbmkHu",
+    "next_state": null,
+    "next_available_actions": [
+      "7uX9nODjeUsasAgbmkHu"
+    ],
+    "factors": {
+      "efficiency": 0.0,
+      "taste_match": 0.6666666666666665,
+      "price_saving": 0.0,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 0.0,
+      "total_savings_krw": 0.0,
+      "shared_ingredients": []
+    },
+    "taste_match_score": 66.66666666666666,
+    "timestamp": "2025-11-09T00:10:17.981960"
+  },
+  "b4c15ad8-d0bb-4952-af18-d4f0c1c31e37": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "w6A4lNbaEw7clb9qweI8",
+    "recipe_name": "유포면",
+    "state_hash": "96f56e16e01356ab2cc3c4a9fb1e6a99",
+    "action": "w6A4lNbaEw7clb9qweI8",
+    "next_state": null,
+    "next_available_actions": [
+      "w6A4lNbaEw7clb9qweI8",
+      "1Gjst6LtKK1nrk2lK4W6",
+      "OS03laYa3X1uyng3zpV8"
+    ],
+    "factors": {
+      "efficiency": 0.0,
+      "taste_match": 0.33333333333333326,
+      "price_saving": 0.0,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 0.0,
+      "total_savings_krw": 0.0,
+      "shared_ingredients": []
+    },
+    "taste_match_score": 33.33333333333333,
+    "timestamp": "2025-11-09T01:01:47.604470"
+  },
+  "7b3ad6f9-3a4e-4341-81f9-1fdac627e654": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "w6A4lNbaEw7clb9qweI8",
+    "recipe_name": "유포면",
+    "state_hash": "24bad7deb512767ebbbb8e052e273ad6",
+    "action": "w6A4lNbaEw7clb9qweI8",
+    "next_state": null,
+    "next_available_actions": [
+      "w6A4lNbaEw7clb9qweI8",
+      "1Gjst6LtKK1nrk2lK4W6",
+      "OS03laYa3X1uyng3zpV8"
+    ],
+    "factors": {
+      "efficiency": 0.0,
+      "taste_match": 0.33333333333333326,
+      "price_saving": 0.0,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 0.0,
+      "total_savings_krw": 0.0,
+      "shared_ingredients": []
+    },
+    "taste_match_score": 33.33333333333333,
+    "timestamp": "2025-11-09T03:01:34.647837"
+  },
+  "364c7a9a-92bc-458f-afbb-0e9eb4d26f30": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "GWzHDQWREl2wD2uqa9tl",
+    "recipe_name": "김국 국수",
+    "state_hash": "b7bd99e7e20f9033aa68bce300d4bc6c",
+    "action": "GWzHDQWREl2wD2uqa9tl",
+    "next_state": null,
+    "next_available_actions": [
+      "GWzHDQWREl2wD2uqa9tl",
+      "w6A4lNbaEw7clb9qweI8"
+    ],
+    "factors": {
+      "efficiency": 0.15,
+      "taste_match": 0.6666666666666665,
+      "price_saving": 0.2,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 15.0,
+      "total_savings_krw": 2000.0,
+      "shared_ingredients": [
+        "소면"
+      ]
+    },
+    "taste_match_score": 66.66666666666666,
+    "timestamp": "2025-11-09T04:30:46.418239"
+  },
+  "7b4c962b-ed9a-47bc-88b2-348123715b6f": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "GWzHDQWREl2wD2uqa9tl",
+    "recipe_name": "김국 국수",
+    "state_hash": "b7bd99e7e20f9033aa68bce300d4bc6c",
+    "action": "GWzHDQWREl2wD2uqa9tl",
+    "next_state": null,
+    "next_available_actions": [
+      "GWzHDQWREl2wD2uqa9tl",
+      "w6A4lNbaEw7clb9qweI8"
+    ],
+    "factors": {
+      "efficiency": 0.15,
+      "taste_match": 0.6666666666666665,
+      "price_saving": 0.2,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 15.0,
+      "total_savings_krw": 2000.0,
+      "shared_ingredients": [
+        "소면"
+      ]
+    },
+    "taste_match_score": 66.66666666666666,
+    "timestamp": "2025-11-09T04:32:56.755883"
+  },
+  "faebf5f3-aa1f-4f92-8770-e8ab4689846a": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "GWzHDQWREl2wD2uqa9tl",
+    "recipe_name": "김국 국수",
+    "state_hash": "b7bd99e7e20f9033aa68bce300d4bc6c",
+    "action": "GWzHDQWREl2wD2uqa9tl",
+    "next_state": null,
+    "next_available_actions": [
+      "GWzHDQWREl2wD2uqa9tl",
+      "w6A4lNbaEw7clb9qweI8"
+    ],
+    "factors": {
+      "efficiency": 0.15,
+      "taste_match": 0.6666666666666665,
+      "price_saving": 0.2,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 15.0,
+      "total_savings_krw": 2000.0,
+      "shared_ingredients": [
+        "소면"
+      ]
+    },
+    "taste_match_score": 66.66666666666666,
+    "timestamp": "2025-11-09T04:33:04.676862"
+  },
+  "52bf1af2-49f9-4828-9cf7-a9fcd1a5ad9a": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "GWzHDQWREl2wD2uqa9tl",
+    "recipe_name": "김국 국수",
+    "state_hash": "b7bd99e7e20f9033aa68bce300d4bc6c",
+    "action": "GWzHDQWREl2wD2uqa9tl",
+    "next_state": null,
+    "next_available_actions": [
+      "GWzHDQWREl2wD2uqa9tl",
+      "w6A4lNbaEw7clb9qweI8"
+    ],
+    "factors": {
+      "efficiency": 0.15,
+      "taste_match": 0.6666666666666665,
+      "price_saving": 0.2,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 15.0,
+      "total_savings_krw": 2000.0,
+      "shared_ingredients": [
+        "소면"
+      ]
+    },
+    "taste_match_score": 66.66666666666666,
+    "timestamp": "2025-11-09T04:35:51.281781"
+  },
+  "28172a18-3006-45d8-9795-f9e8c3a3bf01": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "w6A4lNbaEw7clb9qweI8",
+    "recipe_name": "유포면",
+    "state_hash": "0dbf5a785f11ad3caca631ab3a20aa9b",
+    "action": "w6A4lNbaEw7clb9qweI8",
+    "next_state": null,
+    "next_available_actions": [
+      "w6A4lNbaEw7clb9qweI8",
+      "OS03laYa3X1uyng3zpV8",
+      "dNsBscGPqJHWh8Havt2Z",
+      "jpaF4Y01WnpQ7L55ZJD9",
+      "2MNd4348jtT0rearbbcq"
+    ],
+    "factors": {
+      "efficiency": 0.0,
+      "taste_match": 0.5333333333333333,
+      "price_saving": 0.0,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 0.0,
+      "total_savings_krw": 0.0,
+      "shared_ingredients": []
+    },
+    "taste_match_score": 53.33333333333333,
+    "timestamp": "2025-11-09T06:00:23.632174"
+  },
+  "c2183131-132b-4792-88af-a142757a39fd": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "w6A4lNbaEw7clb9qweI8",
+    "recipe_name": "유포면",
+    "state_hash": "a9aaf2f4f17f81144f9a9ade5a7a490f",
+    "action": "w6A4lNbaEw7clb9qweI8",
+    "next_state": null,
+    "next_available_actions": [
+      "w6A4lNbaEw7clb9qweI8",
+      "JF78ysWdRg04jkEqmjZp",
+      "dNsBscGPqJHWh8Havt2Z",
+      "JHxtLywy4wT7HdHP4L9p",
+      "O1yNsm4HmHfulAl4MBXK"
+    ],
+    "factors": {
+      "efficiency": 0.0,
+      "taste_match": 0.44,
+      "price_saving": 0.0,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 0.0,
+      "total_savings_krw": 0.0,
+      "shared_ingredients": []
+    },
+    "taste_match_score": 44.0,
+    "timestamp": "2025-11-09T06:02:58.660049"
+  },
+  "f1e01da2-fc15-4846-8bca-c8882c3da256": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "w6A4lNbaEw7clb9qweI8",
+    "recipe_name": "유포면",
+    "state_hash": "4ae41ff4ab4d68dcd8a5f2e5789552c3",
+    "action": "w6A4lNbaEw7clb9qweI8",
+    "next_state": null,
+    "next_available_actions": [
+      "w6A4lNbaEw7clb9qweI8",
+      "JF78ysWdRg04jkEqmjZp",
+      "dNsBscGPqJHWh8Havt2Z",
+      "JHxtLywy4wT7HdHP4L9p",
+      "O1yNsm4HmHfulAl4MBXK"
+    ],
+    "factors": {
+      "efficiency": 0.0,
+      "taste_match": 0.44,
+      "price_saving": 0.0,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 0.0,
+      "total_savings_krw": 0.0,
+      "shared_ingredients": []
+    },
+    "taste_match_score": 44.0,
+    "timestamp": "2025-11-09T06:11:45.568474"
+  },
+  "61e4a100-0433-466b-864b-ab5c654c9192": {
+    "user_id": "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1",
+    "recipe_id": "w6A4lNbaEw7clb9qweI8",
+    "recipe_name": "유포면",
+    "state_hash": "9b7cc57d0b6b1dd2d82d3256031c7f52",
+    "action": "w6A4lNbaEw7clb9qweI8",
+    "next_state": null,
+    "next_available_actions": [
+      "w6A4lNbaEw7clb9qweI8",
+      "JF78ysWdRg04jkEqmjZp",
+      "dNsBscGPqJHWh8Havt2Z",
+      "JHxtLywy4wT7HdHP4L9p",
+      "O1yNsm4HmHfulAl4MBXK"
+    ],
+    "factors": {
+      "efficiency": 0.0,
+      "taste_match": 0.44,
+      "price_saving": 0.0,
+      "popularity": 0.5
+    },
+    "efficiency_metrics": {
+      "waste_reduction_percent": 0.0,
+      "total_savings_krw": 0.0,
+      "shared_ingredients": []
+    },
+    "taste_match_score": 44.0,
+    "timestamp": "2025-11-09T08:19:31.938488"
+  }
+}

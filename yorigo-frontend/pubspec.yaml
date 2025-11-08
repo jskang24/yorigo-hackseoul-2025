@@ -41,11 +41,15 @@ dependencies:
   firebase_auth: ^5.3.3
   cloud_firestore: ^5.6.12
 
+  # Device frame for web demo
+  device_frame: ^1.2.0
+
   # Localization
   flutter_localizations:
     sdk: flutter
   intl: ^0.20.2
   shared_preferences: ^2.3.0
+  url_launcher: ^6.3.1
 
 dev_dependencies:
   flutter_test:
@@ -73,6 +77,7 @@ flutter:
   assets:
     - assets/Yorigo_icon_dark.png
     - assets/Yorigo_icon_light.png
+    - assets/Yorigo_logo_transparent.png
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/to/resolution-aware-images

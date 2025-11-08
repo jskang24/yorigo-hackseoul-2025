@@ -18,21 +18,140 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
-
-  <!-- iOS meta tags & icons -->
+  <meta name="description" content="Yorigo - 요리 레시피 앱">
+  
+  <!-- Mobile Viewport Configuration -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
   <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="yorigo">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="요리고">
+  
+  <!-- Prevent zooming and ensure mobile-like experience -->
+  <meta name="format-detection" content="telephone=no">
+  
+  <!-- Icons -->
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>yorigo</title>
+  <title>요리고 (Yorigo)</title>
   <link rel="manifest" href="manifest.json">
+  
+  <style>
+    /* Basic styling for Flutter web */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+    
+    /* Loading screen */
+    .loading {
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      text-align: center;
+      z-index: 10000;
+      font-size: 18px;
+    }
+    
+    /* Scroll instruction */
+    .scroll-instruction {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      background: rgba(255, 255, 255, 0.95);
+      padding: 12px 20px;
+      border-radius: 12px;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 14px;
+      color: #333;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      z-index: 10001;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      animation: fadeIn 0.5s ease-in;
+    }
+    
+    .scroll-instruction-icon {
+      font-size: 18px;
+    }
+    
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    /* Hide instruction on mobile */
+    @media (max-width: 768px) {
+      .scroll-instruction {
+        display: none;
+      }
+    }
+    
+    /* Prevent text selection and touch issues */
+    * {
+      -webkit-tap-highlight-color: transparent;
+      -webkit-touch-callout: none;
+      -webkit-user-select: none;
+      user-select: none;
+    }
+  </style>
 </head>
 <body>
+  <!-- Scroll instruction for desktop users -->
+  <div class="scroll-instruction">
+    <span class="scroll-instruction-icon">💡</span>
+    <span>Use scroll wheel or trackpad to navigate (not drag)</span>
+  </div>
+  
+  <div class="loading">로딩 중...</div>
   <script src="flutter_bootstrap.js" async></script>
+  
+  <script>
+    // Hide loading screen after Flutter initializes
+    window.addEventListener('load', function() {
+      setTimeout(function() {
+        const loading = document.querySelector('.loading');
+        if (loading) {
+          loading.style.display = 'none';
+        }
+      }, 2000);
+    });
+    
+    // Prevent zoom on double tap
+    let lastTouchEnd = 0;
+    document.addEventListener('touchend', function(event) {
+      const now = Date.now();
+      if (now - lastTouchEnd <= 300) {
+        event.preventDefault();
+      }
+      lastTouchEnd = now;
+    }, false);
+    
+    // Prevent context menu on long press
+    document.addEventListener('contextmenu', function(e) {
+      e.preventDefault();
+    });
+  </script>
 </body>
 </html>

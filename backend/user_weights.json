@@ -1,0 +1,14 @@
+{
+  "3Oe5zZCMpEX8Gdi7ugGu8wwxdlh1": {
+    "weights": {
+      "efficiency": 0.46564346362656506,
+      "taste_match": 0.4044581995194195,
+      "price_saving": 0.08036581739229419,
+      "popularity": 0.0495325194617213
+    },
+    "total_feedback": 4,
+    "positive_feedback": 0,
+    "negative_feedback": 4,
+    "last_updated": "2025-11-09T06:03:58.080666"
+  }
+}
