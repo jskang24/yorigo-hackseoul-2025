@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "784944328733",
+    "project_id": "yorigo-f7408",
+    "storage_bucket": "yorigo-f7408.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:784944328733:android:c723cfd6b97df9d58c96f4",
+        "android_client_info": {
+          "package_name": "com.example.yorigo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDZBINT8LmYkGh-J_cadwCe1WruzM7QPz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
