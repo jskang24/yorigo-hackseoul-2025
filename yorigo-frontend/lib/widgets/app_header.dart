@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 import '../theme/app_colors.dart';
 import '../services/auth_service.dart';
 import '../l10n/app_localizations.dart';
+import '../main.dart';
 
 class AppHeader extends StatelessWidget {
   final VoidCallback? onLoginPressed;
@@ -13,43 +14,44 @@ class AppHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     final authService = AuthService();
 
+    final brightness = Theme.of(context).brightness;
     return Container(
       padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 12),
-      decoration: const BoxDecoration(
-        color: AppColors.background,
-        border: Border(bottom: BorderSide(color: AppColors.border, width: 1)),
+      decoration: BoxDecoration(
+        color: AppColors.getBackground(brightness),
+        border: Border(
+          bottom: BorderSide(color: AppColors.getBorder(brightness), width: 1),
+        ),
       ),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
           Row(
             children: [
-              Container(
-                width: 40,
-                height: 40,
-                decoration: BoxDecoration(
-                  color: AppColors.primary,
-                  borderRadius: BorderRadius.circular(12),
-                ),
-                padding: const EdgeInsets.all(4),
-                child: Image.asset(
-                  'assets/Yorigo_icon_dark.png',
-                  fit: BoxFit.contain,
-                ),
-              ),
-              const SizedBox(width: 8),
-              Builder(
-                builder: (context) {
-                  final l10n = AppLocalizations.of(context);
-                  return Text(
-                    l10n?.appName ?? '요리고',
-                    style: const TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                      color: AppColors.textPrimary,
+              Image.asset(
+                'assets/Yorigo_logo_transparent.png',
+                width: 32,
+                height: 32,
+                fit: BoxFit.contain,
+                errorBuilder: (context, error, stackTrace) {
+                  return Container(
+                    width: 32,
+                    height: 32,
+                    decoration: BoxDecoration(
+                      color: AppColors.primary,
+                      borderRadius: BorderRadius.circular(8),
                     ),
                   );
                 },
+              ),
+              const SizedBox(width: 8),
+              const Text(
+                '요리고',
+                style: TextStyle(
+                  fontSize: 20,
+                  fontWeight: FontWeight.bold,
+                  color: AppColors.primary,
+                ),
               ),
             ],
           ),
@@ -62,7 +64,14 @@ class AppHeader extends StatelessWidget {
                 // Show profile icon when logged in
                 return GestureDetector(
                   onTap: () {
-                    Navigator.pushNamed(context, '/settings');
+                    // Navigate to profile tab in the navigation bar instead of a new page
+                    final mainNavigator = MainNavigator.of(context);
+                    if (mainNavigator != null) {
+                      mainNavigator.navigateToProfile();
+                    } else {
+                      // Fallback to named route if MainNavigator not found
+                      Navigator.pushNamed(context, '/profile');
+                    }
                   },
                   child: Container(
                     width: 40,
@@ -95,8 +104,8 @@ class AppHeader extends StatelessWidget {
                   ),
                   child: Text(
                     l10n?.login ?? '로그인',
-                    style: const TextStyle(
-                      color: AppColors.background,
+                    style: TextStyle(
+                      color: AppColors.getBackground(brightness),
                       fontSize: 14,
                       fontWeight: FontWeight.w600,
                     ),

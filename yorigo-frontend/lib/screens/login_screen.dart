@@ -48,8 +48,8 @@ class _LoginScreenState extends State<LoginScreen> {
         context,
       ).showSnackBar(const SnackBar(content: Text('로그인되었습니다!')));
 
-      // Navigate back to main screen
-      Navigator.of(context).pop();
+      // Navigate to home and replace the entire navigation stack to force rebuild
+      Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false);
     } catch (e) {
       if (!mounted) return;
 
@@ -67,13 +67,17 @@ class _LoginScreenState extends State<LoginScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final brightness = Theme.of(context).brightness;
     return Scaffold(
-      backgroundColor: AppColors.background,
+      backgroundColor: AppColors.getBackground(brightness),
       appBar: AppBar(
-        backgroundColor: AppColors.background,
+        backgroundColor: AppColors.getBackground(brightness),
         elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
+          icon: Icon(
+            Icons.arrow_back,
+            color: AppColors.getTextPrimary(brightness),
+          ),
           onPressed: () => Navigator.of(context).pop(),
         ),
       ),
@@ -106,12 +110,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 ),
               ),
               const SizedBox(height: 32),
-              const Text(
+              Text(
                 '계속 이용하기',
                 style: TextStyle(
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
-                  color: AppColors.textPrimary,
+                  color: AppColors.getTextPrimary(brightness),
                 ),
               ),
               const SizedBox(height: 48),
@@ -120,12 +124,12 @@ class _LoginScreenState extends State<LoginScreen> {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
+                  Text(
                     '이메일',
                     style: TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.w600,
-                      color: AppColors.textPrimary,
+                      color: AppColors.getTextPrimary(brightness),
                     ),
                   ),
                   const SizedBox(height: 8),
@@ -133,19 +137,21 @@ class _LoginScreenState extends State<LoginScreen> {
                     controller: _emailController,
                     decoration: InputDecoration(
                       hintText: 'your@email.com',
-                      hintStyle: const TextStyle(color: AppColors.textTertiary),
+                      hintStyle: TextStyle(
+                        color: AppColors.getTextTertiary(brightness),
+                      ),
                       filled: true,
-                      fillColor: AppColors.backgroundTertiary,
+                      fillColor: AppColors.getBackgroundTertiary(brightness),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12),
-                        borderSide: const BorderSide(
-                          color: AppColors.borderSecondary,
+                        borderSide: BorderSide(
+                          color: AppColors.getBorderSecondary(brightness),
                         ),
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12),
-                        borderSide: const BorderSide(
-                          color: AppColors.borderSecondary,
+                        borderSide: BorderSide(
+                          color: AppColors.getBorderSecondary(brightness),
                         ),
                       ),
                       contentPadding: const EdgeInsets.symmetric(
@@ -155,7 +161,10 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                     keyboardType: TextInputType.emailAddress,
                     textInputAction: TextInputAction.next,
-                    style: const TextStyle(fontSize: 16),
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: AppColors.getTextPrimary(brightness),
+                    ),
                   ),
                 ],
               ),
@@ -165,12 +174,12 @@ class _LoginScreenState extends State<LoginScreen> {
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text(
+                  Text(
                     '비밀번호',
                     style: TextStyle(
                       fontSize: 15,
                       fontWeight: FontWeight.w600,
-                      color: AppColors.textPrimary,
+                      color: AppColors.getTextPrimary(brightness),
                     ),
                   ),
                   const SizedBox(height: 8),
@@ -179,19 +188,21 @@ class _LoginScreenState extends State<LoginScreen> {
                     obscureText: true,
                     decoration: InputDecoration(
                       hintText: '••••••••',
-                      hintStyle: const TextStyle(color: AppColors.textTertiary),
+                      hintStyle: TextStyle(
+                        color: AppColors.getTextTertiary(brightness),
+                      ),
                       filled: true,
-                      fillColor: AppColors.backgroundTertiary,
+                      fillColor: AppColors.getBackgroundTertiary(brightness),
                       border: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12),
-                        borderSide: const BorderSide(
-                          color: AppColors.borderSecondary,
+                        borderSide: BorderSide(
+                          color: AppColors.getBorderSecondary(brightness),
                         ),
                       ),
                       enabledBorder: OutlineInputBorder(
                         borderRadius: BorderRadius.circular(12),
-                        borderSide: const BorderSide(
-                          color: AppColors.borderSecondary,
+                        borderSide: BorderSide(
+                          color: AppColors.getBorderSecondary(brightness),
                         ),
                       ),
                       contentPadding: const EdgeInsets.symmetric(
@@ -200,7 +211,10 @@ class _LoginScreenState extends State<LoginScreen> {
                       ),
                     ),
                     textInputAction: TextInputAction.done,
-                    style: const TextStyle(fontSize: 16),
+                    style: TextStyle(
+                      fontSize: 16,
+                      color: AppColors.getTextPrimary(brightness),
+                    ),
                     onSubmitted: (_) => _handleLogin(),
                   ),
                 ],
@@ -224,7 +238,7 @@ class _LoginScreenState extends State<LoginScreen> {
                         border: Border.all(
                           color: _rememberMe
                               ? AppColors.primary
-                              : AppColors.textTertiary,
+                              : AppColors.getTextTertiary(brightness),
                           width: 2,
                         ),
                         color: _rememberMe
@@ -241,11 +255,11 @@ class _LoginScreenState extends State<LoginScreen> {
                     ),
                   ),
                   const SizedBox(width: 10),
-                  const Text(
+                  Text(
                     '로그인 정보 기억하기',
                     style: TextStyle(
                       fontSize: 14,
-                      color: AppColors.textSecondary,
+                      color: AppColors.getTextSecondary(brightness),
                     ),
                   ),
                 ],
@@ -264,18 +278,18 @@ class _LoginScreenState extends State<LoginScreen> {
                   ),
                 ),
                 child: _isLoading
-                    ? const SizedBox(
+                    ? SizedBox(
                         width: 24,
                         height: 24,
                         child: CircularProgressIndicator(
-                          color: AppColors.background,
+                          color: AppColors.getBackground(brightness),
                           strokeWidth: 2,
                         ),
                       )
-                    : const Text(
+                    : Text(
                         '로그인',
                         style: TextStyle(
-                          color: AppColors.background,
+                          color: AppColors.getBackground(brightness),
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
                         ),

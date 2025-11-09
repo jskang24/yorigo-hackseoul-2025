@@ -15,10 +15,13 @@ class BottomNav extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final brightness = Theme.of(context).brightness;
     return Container(
-      decoration: const BoxDecoration(
-        color: AppColors.background,
-        border: Border(top: BorderSide(color: AppColors.border, width: 1)),
+      decoration: BoxDecoration(
+        color: AppColors.getBackground(brightness),
+        border: Border(
+          top: BorderSide(color: AppColors.getBorder(brightness), width: 1),
+        ),
       ),
       child: SafeArea(
         child: Padding(
@@ -66,7 +69,10 @@ class BottomNav extends StatelessWidget {
     int? badgeCount,
   }) {
     final isActive = currentIndex == index;
-    final color = isActive ? AppColors.primary : AppColors.textTertiary;
+    final brightness = Theme.of(context).brightness;
+    final color = isActive
+        ? AppColors.primary
+        : AppColors.getTextTertiary(brightness);
 
     return Expanded(
       child: GestureDetector(
@@ -111,8 +117,8 @@ class BottomNav extends StatelessWidget {
                     child: Center(
                       child: Text(
                         badgeCount.toString(),
-                        style: const TextStyle(
-                          color: AppColors.background,
+                        style: TextStyle(
+                          color: AppColors.getBackground(brightness),
                           fontSize: 11,
                           fontWeight: FontWeight.bold,
                         ),

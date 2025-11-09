@@ -69,8 +69,8 @@ class _SignupScreenState extends State<SignupScreen> {
         context,
       ).showSnackBar(const SnackBar(content: Text('계정이 생성되었습니다!')));
 
-      // Navigate back to main screen (user is now logged in)
-      Navigator.of(context).popUntil((route) => route.isFirst);
+      // Navigate to home and replace the entire navigation stack to force rebuild
+      Navigator.of(context).pushNamedAndRemoveUntil('/', (route) => false);
     } catch (e) {
       if (!mounted) return;
 
@@ -88,13 +88,17 @@ class _SignupScreenState extends State<SignupScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final brightness = Theme.of(context).brightness;
     return Scaffold(
-      backgroundColor: AppColors.background,
+      backgroundColor: AppColors.getBackground(brightness),
       appBar: AppBar(
-        backgroundColor: AppColors.background,
+        backgroundColor: AppColors.getBackground(brightness),
         elevation: 0,
         leading: IconButton(
-          icon: const Icon(Icons.arrow_back, color: AppColors.textPrimary),
+          icon: Icon(
+            Icons.arrow_back,
+            color: AppColors.getTextPrimary(brightness),
+          ),
           onPressed: () => Navigator.of(context).pop(),
         ),
       ),
@@ -118,7 +122,7 @@ class _SignupScreenState extends State<SignupScreen> {
                 ),
               ),
               const SizedBox(height: 20),
-              const Row(
+              Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
                   Text(
@@ -126,10 +130,10 @@ class _SignupScreenState extends State<SignupScreen> {
                     style: TextStyle(
                       fontSize: 28,
                       fontWeight: FontWeight.bold,
-                      color: AppColors.textPrimary,
+                      color: AppColors.getTextPrimary(brightness),
                     ),
                   ),
-                  Text(
+                  const Text(
                     '요리고',
                     style: TextStyle(
                       fontSize: 28,
@@ -140,15 +144,19 @@ class _SignupScreenState extends State<SignupScreen> {
                 ],
               ),
               const SizedBox(height: 12),
-              const Text(
+              Text(
                 '레시피를 저장하고 장바구니에 담아보세요',
                 textAlign: TextAlign.center,
-                style: TextStyle(fontSize: 14, color: AppColors.textSecondary),
+                style: TextStyle(
+                  fontSize: 14,
+                  color: AppColors.getTextSecondary(brightness),
+                ),
               ),
               const SizedBox(height: 40),
 
               // Name Input
               _buildInputField(
+                context: context,
                 label: '성함',
                 controller: _nameController,
                 hintText: 'Your name',
@@ -158,6 +166,7 @@ class _SignupScreenState extends State<SignupScreen> {
 
               // Email Input
               _buildInputField(
+                context: context,
                 label: '이메일 주소',
                 controller: _emailController,
                 hintText: 'your@email.com',
@@ -168,6 +177,7 @@ class _SignupScreenState extends State<SignupScreen> {
 
               // Password Input
               _buildInputField(
+                context: context,
                 label: '비밀번호',
                 controller: _passwordController,
                 hintText: '••••••••',
@@ -178,6 +188,7 @@ class _SignupScreenState extends State<SignupScreen> {
 
               // Confirm Password Input
               _buildInputField(
+                context: context,
                 label: '비밀번호 확인',
                 controller: _confirmPasswordController,
                 hintText: '••••••••',
@@ -199,18 +210,18 @@ class _SignupScreenState extends State<SignupScreen> {
                   ),
                 ),
                 child: _isLoading
-                    ? const SizedBox(
+                    ? SizedBox(
                         width: 24,
                         height: 24,
                         child: CircularProgressIndicator(
-                          color: AppColors.background,
+                          color: AppColors.getBackground(brightness),
                           strokeWidth: 2,
                         ),
                       )
-                    : const Text(
+                    : Text(
                         '계정 만들기',
                         style: TextStyle(
-                          color: AppColors.background,
+                          color: AppColors.getBackground(brightness),
                           fontSize: 16,
                           fontWeight: FontWeight.bold,
                         ),
@@ -222,11 +233,11 @@ class _SignupScreenState extends State<SignupScreen> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  const Text(
+                  Text(
                     '계정이 이미 있으신가요? ',
                     style: TextStyle(
                       fontSize: 14,
-                      color: AppColors.textSecondary,
+                      color: AppColors.getTextSecondary(brightness),
                     ),
                   ),
                   TextButton(
@@ -252,6 +263,7 @@ class _SignupScreenState extends State<SignupScreen> {
   }
 
   Widget _buildInputField({
+    required BuildContext context,
     required String label,
     required TextEditingController controller,
     required String hintText,
@@ -260,15 +272,16 @@ class _SignupScreenState extends State<SignupScreen> {
     bool obscureText = false,
     void Function(String)? onSubmitted,
   }) {
+    final brightness = Theme.of(context).brightness;
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
         Text(
           label,
-          style: const TextStyle(
+          style: TextStyle(
             fontSize: 15,
             fontWeight: FontWeight.w600,
-            color: AppColors.textPrimary,
+            color: AppColors.getTextPrimary(brightness),
           ),
         ),
         const SizedBox(height: 8),
@@ -280,23 +293,30 @@ class _SignupScreenState extends State<SignupScreen> {
           onSubmitted: onSubmitted,
           decoration: InputDecoration(
             hintText: hintText,
-            hintStyle: const TextStyle(color: AppColors.textTertiary),
+            hintStyle: TextStyle(color: AppColors.getTextTertiary(brightness)),
             filled: true,
-            fillColor: AppColors.backgroundTertiary,
+            fillColor: AppColors.getBackgroundTertiary(brightness),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
-              borderSide: const BorderSide(color: AppColors.borderSecondary),
+              borderSide: BorderSide(
+                color: AppColors.getBorderSecondary(brightness),
+              ),
             ),
             enabledBorder: OutlineInputBorder(
               borderRadius: BorderRadius.circular(12),
-              borderSide: const BorderSide(color: AppColors.borderSecondary),
+              borderSide: BorderSide(
+                color: AppColors.getBorderSecondary(brightness),
+              ),
             ),
             contentPadding: const EdgeInsets.symmetric(
               horizontal: 16,
               vertical: 14,
             ),
           ),
-          style: const TextStyle(fontSize: 16),
+          style: TextStyle(
+            fontSize: 16,
+            color: AppColors.getTextPrimary(brightness),
+          ),
         ),
       ],
     );
