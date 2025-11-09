@@ -1,4 +1,4 @@
-# 요리고 (Yorigo) 🍳
+# 요리고 (Yorigo)
 
 **AI-Powered Recipe Management & Smart Shopping for Korean Home Cooking**
 
