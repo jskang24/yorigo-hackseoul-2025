@@ -113,6 +113,6 @@ User Cart + Preferences → State Representation
 
 **Backend API**: [yorigo-production.up.railway.app](https://yorigo-production.up.railway.app)
 
-**Website**: [yorigo.kr](yorigo.kr)
+**Website**: [yorigo.kr](https://yorigo.kr/)
 
 © 2025 Yorigo. All rights reserved.
