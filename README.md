@@ -6,26 +6,26 @@ Yorigo transforms YouTube cooking videos into actionable recipes and helps you s
 
 ---
 
-## 🎯 Key Features
+## Key Features
 
-### 📹 AI Recipe Extraction
+### AI Recipe Extraction
 - **Parse any YouTube cooking video** into structured recipes
 - Combines **speech recognition (Whisper ASR)** + **optical character recognition (EasyOCR)** + **GPT-4**
 - Automatically extracts ingredients, quantities, steps, and nutritional information
 
-### 🛒 Smart Shopping Cart
+### Smart Shopping Cart
 - **Intelligent ingredient aggregation** across multiple recipes
 - **Optimal product search** via Coupang API to minimize food waste and cost
 - Categorized shopping lists (protein, vegetables, grains, seasonings)
 - Real-time price comparison and per-serving cost calculation
 
-### 🤖 Personalized Recommendations
+### Personalized Recommendations
 - **Q-Learning based recommendation system** that learns your preferences
 - Suggests recipes that **reuse leftover ingredients** to reduce waste
 - Calculates potential savings from adding recommended recipes
 - Adapts to your cooking habits and taste profile over time
 
-### 📅 Meal Planning
+### Meal Planning
 - Visual calendar for planning weekly meals
 - Track servings and cooking days
 - Sync shopping lists with planned meals
@@ -33,7 +33,7 @@ Yorigo transforms YouTube cooking videos into actionable recipes and helps you s
 
 ---
 
-## 🛠️ Tech Stack
+## Tech Stack
 
 ### Frontend
 - **Flutter (Dart)** - Cross-platform mobile & web app
@@ -61,7 +61,7 @@ Yorigo transforms YouTube cooking videos into actionable recipes and helps you s
 
 ---
 
-## 🚀 Value Propositions
+## Value Propositions
 
 1. **Save Time** - No more manual recipe transcription from videos
 2. **Save Money** - Optimize purchases to reduce food waste and cost
@@ -71,15 +71,15 @@ Yorigo transforms YouTube cooking videos into actionable recipes and helps you s
 
 ---
 
-## 📱 Platform Support
+## Platform Support
 
-- ✅ **iOS** (iPhone, iPad)
-- ✅ **Android** (Phone, Tablet)
-- ✅ **Web** (Desktop, Mobile browsers)
+- **iOS** (iPhone, iPad)
+- **Android** (Phone, Tablet)
+- **Web** (Desktop, Mobile browsers)
 
 ---
 
-## 🎓 How It Works
+## How It Works
 
 ### Recipe Parsing Pipeline
 ```
@@ -107,21 +107,12 @@ User Cart + Preferences → State Representation
 
 ---
 
-## 🌟 Demo
+## Demo
 
 **Web App**: [yorigo-f7408.web.app](https://yorigo-f7408.web.app)
 
 **Backend API**: [yorigo-production.up.railway.app](https://yorigo-production.up.railway.app)
 
----
-
-## 📄 License
+**Website**: [yorigo.kr](yorigo.kr)
 
 © 2025 Yorigo. All rights reserved.
-
----
-
-## 👥 Team
-
-Built with ❤️ by the Yorigo team for Korean home cooks who want to simplify meal planning and reduce food waste.
-
